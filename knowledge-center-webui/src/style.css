@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: oklch(0.985 0.01 145);
+  --color-foreground: oklch(0.22 0.03 160);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.22 0.03 160);
+  --color-primary: oklch(0.48 0.14 250);
+  --color-primary-foreground: oklch(0.98 0.01 250);
+  --color-muted: oklch(0.95 0.01 160);
+  --color-muted-foreground: oklch(0.5 0.03 160);
+  --color-border: oklch(0.9 0.01 160);
+  --color-destructive: oklch(0.55 0.2 25);
+  --color-destructive-foreground: oklch(0.98 0.01 25);
+  --color-accent: oklch(0.94 0.02 160);
+  --color-accent-foreground: oklch(0.25 0.04 160);
+  --radius-lg: 0.5rem;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top left, oklch(0.95 0.03 145), transparent 50%),
+    radial-gradient(ellipse at top right, oklch(0.95 0.03 250), transparent 45%),
+    var(--color-background);
+  color: var(--color-foreground);
+  font-family: "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+}

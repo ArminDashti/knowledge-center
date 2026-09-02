@@ -1,0 +1,33 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Env
+.env
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Docker volume data (if bind-mounted)
+.armin/docker-data/
+
+# === auto-managed large files (>5MB) ===
+
+# BEGIN AUTO-MANAGED LARGE FILES (>5MB)
+# END AUTO-MANAGED LARGE FILES
+
+# === auto-managed large files (github-commit-push-all) ===
+# auto-managed-large-files
+knowledge-center-api.exe
+
+# AUTO-IGNORE-LARGE-FILES (>5MB) â€” managed by github-commit-push-all
+# github-commit-push-all: large files (>5MB) — auto-managed
+
+# auto-managed: files > 5MB

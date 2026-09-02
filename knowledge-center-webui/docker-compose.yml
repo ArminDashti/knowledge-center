@@ -1,0 +1,20 @@
+name: knowledge-center
+
+services:
+  knowledge-center-webui:
+    image: ${IMAGE_TAG:-knowledge-center-webui:latest}
+    container_name: knowledge-center-webui
+    restart: "no"
+    expose:
+      - "${INTERNAL_PORT:-80}"
+    ports:
+      - target: ${INTERNAL_PORT:-80}
+        published: ${PUBLISH_PORT-5198}
+        protocol: tcp
+    networks:
+      - app_net
+
+networks:
+  app_net:
+    name: ${DOCKER_NETWORK:-knowledge-center-net}
+    external: true
