@@ -66,10 +66,12 @@ export default defineConfig({
     },
   },
   server: {
-    port: 5173,
+    host: '0.0.0.0',
+    port: Number(process.env.WEBUI_PORT || 5173),
+    strictPort: true,
     proxy: {
       '/api': {
-        target: 'http://127.0.0.1:8091',
+        target: process.env.API_PROXY_TARGET || 'http://127.0.0.1:8091',
         changeOrigin: true,
       },
     },

@@ -10,6 +10,9 @@
 # Env
 .env
 
+# Air hot-reload build output
+tmp/
+
 # IDE / OS
 .idea/
 .vscode/
