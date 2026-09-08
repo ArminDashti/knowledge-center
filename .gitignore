@@ -2,3 +2,5 @@
 *.exe
 
 # Large files (>5MB) — auto-managed
+
+# AUTO-LARGE-FILES (>5MB) — managed by commit-push-to-github
